@@ -11,7 +11,7 @@ body {
 :root {
   --bg-primary: #bfd1e5;
   --bg-secondary: #eaeaea;
-  --hover-color: #
+  --hover-color: lightgrey
   --txt-primary: #f7f7f7;
   --txt-secondary: #222222;
 }
@@ -40,7 +40,7 @@ body {
 }
 
 .card:hover {
-  background: lightgrey;
+  background: var(--hover-color);
   transition: 0.3s;
 }
 
