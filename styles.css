@@ -6,12 +6,13 @@ body {
 }
 
 body {
+  font-family: "Barlow", sans-serif;
   background: var(--bg-primary);
 }
 :root {
   --bg-primary: #bfd1e5;
   --bg-secondary: #eaeaea;
-  --hover-color: lightgrey
+  --hover-color: #252627;
   --txt-primary: #f7f7f7;
   --txt-secondary: #222222;
   --box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3);
@@ -32,17 +33,20 @@ body {
   width: 20%;
   background-color: var(--bg-secondary);
   color: var(--txt-secondary);
-  margin: 30px 5px 0px 5px;
+  margin: 30px 15px 0px 15px;
   padding: 20px;
   display: block;
   text-decoration: none;
   border-radius: 5px;
   box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s;
 }
 
 .card:hover {
   background: var(--hover-color);
+  color: var(--txt-primary);
   transition: 0.3s;
+  transform: scale(1.1);
 }
 
 .text-center {
@@ -70,7 +74,6 @@ body {
   display: grid;
   grid-template-columns: 1fr 3px 1fr;
   color: var(--txt-secondary);
-  
 }
 
 .timeline__component {
@@ -80,9 +83,9 @@ body {
 
 .timeline__component--bg {
   padding: 1.5em;
-  background-color: rgba(255,255,255,0.2);
+  background-color: var(--bg-secondary);
   box-shadow: var(--box-shadow);
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 .timeline__component--bottom {
@@ -92,7 +95,6 @@ body {
 .timeline__year--right {
   text-align: right;
 }
-
 
 .timeline__middle {
   position: relative;
@@ -131,6 +133,11 @@ body {
   margin: 5% 10% 0 10%;
 }
 
+.closing-text {
+  text-align: center;
+  margin: 5% 10% 1% 10%;
+}
+
 .description-wrapper {
   display: flex;
   justify-content: left;
@@ -138,5 +145,16 @@ body {
   height: auto;
 }
 
+.bottom-container {
+  text-align: center;
+  padding: 30px 0 20px;
+}
 
+a {
+  text-decoration: none;
+  color: var(--txt-secondary);
+}
 
+.icon-footer {
+  margin-right: 5px;
+}
